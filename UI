@@ -324,10 +324,6 @@ end
 
 Utils.TweenTrans = function(Object, Transparency)
 	local Properties = {
-		TextBox = "TextTransparency",
-		TextLabel = "TextTransparency",
-		TextButton = "TextTransparency",
-		ImageButton = "ImageTransparency",
 		ImageLabel = "ImageTransparency"
 	}
 
@@ -690,8 +686,8 @@ function UILibrary:LoadWindow(Title, Size)
 						Moving = false
 
 						Utils.Tween(Label, "Quad", "Out", .25, {
-							BackgroundTransparency = 1;
-							TextTransparency = 1;
+							BackgroundTransparency = 0;
+							TextTransparency = 0;
 						});
 					end
 				end));
@@ -979,7 +975,7 @@ function UILibrary:LoadWindow(Title, Size)
 				DropdownElement.Title.Text = Title
 				DropdownSelection.Visible = false
 				DropdownSelection.Frame.Visible = false
-				DropdownSelection.Size = UDim2.new(1, -80, 0, 0)
+				DropdownSelection.Size = UDim2.new(1, -10, 0, 0)
 				DropdownElement.Parent = Section.Options
 				DropdownSelection.Parent = Section.Options
 			end
