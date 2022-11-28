@@ -979,7 +979,7 @@ function UILibrary:LoadWindow(Title, Size)
 				DropdownElement.Title.Text = Title
 				DropdownSelection.Visible = false
 				DropdownSelection.Frame.Visible = false
-				DropdownSelection.Size = UDim2.new(1, -10, 0, 0)
+				DropdownSelection.Size = UDim2.new(1, -80, 0, 0)
 				DropdownElement.Parent = Section.Options
 				DropdownSelection.Parent = Section.Options
 			end
